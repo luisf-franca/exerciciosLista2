@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+    Double X;
+    Double Y;
+    Double Z;
+
+    X = Double.parseDouble(JOptionPane.showInputDialog("Insira o valor do lado X do triângulo"));
+    Y = Double.parseDouble(JOptionPane.showInputDialog("Insira o valor do lado Y do triângulo"));
+    Z = Double.parseDouble(JOptionPane.showInputDialog("Insira o valor do lado Z do triângulo"));
+
+    if (X < Y + Z && Y < X + Z && Z < X + Y) {
+      JOptionPane.showMessageDialog(null, "Os valores informados formam um triângulo");
+    } else {
+      JOptionPane.showMessageDialog(null, "Os valores informados não formam um triângulo");
+    }
+  }
+}
