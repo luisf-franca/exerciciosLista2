@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+    Float numero1, numero2, menu;
+
+    for (int repeticao = 1; repeticao <= 20; ++repeticao) {
+      numero1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro número"));
+      numero2 = Float.parseFloat(JOptionPane.showInputDialog("Digite o segundo número"));
+      menu = Float
+          .parseFloat(JOptionPane.showInputDialog("1 Somar | 2 Subtrair | 3 - Multiplicar | 4 Dividir | 5 Sair"));
+      if (menu == 1) {
+        JOptionPane.showMessageDialog(null, +numero1 + +numero2);
+      } else if (menu == 2) {
+        JOptionPane.showMessageDialog(null, numero1 - numero2);
+      } else if (menu == 3) {
+        JOptionPane.showMessageDialog(null, numero1 * numero2);
+      } else if (menu == 4) {
+        JOptionPane.showMessageDialog(null, numero1 / numero2);
+      } else if (menu == 5) {
+      }
+    }
+  }
+}
