@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+    Integer idade;
+
+    JOptionPane.showMessageDialog(null, "Vamos descobrir em qual categoria você foi inserido na natação!");
+    idade = Integer.parseInt(JOptionPane.showInputDialog("Por favor nadador, informe sua idade"));
+
+    if (idade <= 7) {
+      JOptionPane.showMessageDialog(null, "Categoria INFANTIL");
+    } else if (idade >= 8 && idade <= 10) {
+      JOptionPane.showMessageDialog(null, "Categoria JUVENIL");
+    } else if (idade >= 11 && idade <= 15) {
+      JOptionPane.showMessageDialog(null, "Categoria ADOLESCENTE");
+    } else if (idade >= 16 && idade <= 30) {
+      JOptionPane.showMessageDialog(null, "Categoria ADULTA");
+    } else if (idade > 30) {
+      JOptionPane.showMessageDialog(null, "Categoria SENIOR");
+    }
+  }
+}
